@@ -1,10 +1,11 @@
 # test-aws-otel-agent
-###This repo is demo project for reproducing issue https://github.com/aws-observability/aws-otel-java-instrumentation/issues/147
+### This repo is demo project for reproducing issue https://github.com/aws-observability/aws-otel-java-instrumentation/issues/147
 
 This repo is to demo exception thrown with [aws-otel auto-instrumentation java agent](https://github.com/aws-observability/aws-otel-java-instrumentation) when using AWS Java KMS SDK 1.X.
 
 Run main program with VM arguments:
 I use below in IntelliJ:
+
 `-javaagent:"/Users/gautam/Documents/custom-docker-builds/service-base-image/files/otel-java-agent/aws-opentelemetry-agent.jar"`
 
 The JAR is downloaded from [this page](https://aws-otel.github.io/docs/getting-started/java-sdk/trace-auto-instr). Latest at time of this issue: [Link](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v1.10.0/opentelemetry-javaagent.jar)
